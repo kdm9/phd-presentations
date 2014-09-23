@@ -1,7 +1,6 @@
 \documentclass{beamer}
 \usepackage{textcomp}
 \usepackage{caption}
-\usepackage[style=authoryear,natbib=true,url=false,isbn=false]{biblatex}
 \usepackage{listings}
 
 % Beamer
@@ -32,7 +31,7 @@
       \item Phenomics (Image analysis)
     \end{itemize}
     \pause
-    \item Starting PhD in Bioinf. of Evolutionary Genomics next Feb/March
+    \item Starting PhD in Bioinformatics Evolutionary Genomics next Feb/March
   \end{itemize}
 \end{frame}
 
