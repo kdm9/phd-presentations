@@ -1,0 +1,53 @@
+\documentclass{beamer}
+\usepackage{textcomp}
+\usepackage{caption}
+\usepackage[style=authoryear,natbib=true,url=false,isbn=false]{biblatex}
+\usepackage{listings}
+
+% Beamer
+\usetheme{default}
+\setbeamertemplate{frametitle}[default][center]
+  % Title page
+  \title{Evolutionary Genomics of a Model Grass Compilospecies}
+  \author{Kevin Murray}
+  \institute{Borevitz Lab, ANU}
+  \date{\today}
+
+\begin{document}
+\begin{frame}
+  \titlepage
+  \vfill
+\end{frame}
+
+\begin{frame}{About Me}
+  \begin{itemize}
+    \item Bioinformatics
+    \pause
+    \item More Bioinformatics
+    \pause
+    \item This Year, in Borevitz Lab:
+    \begin{itemize}
+      \item TraitCapture Project Developer
+      \item Genomics (Low level seq. analysis)
+      \item Phenomics (Image analysis)
+    \end{itemize}
+    \pause
+    \item Starting PhD in Bioinf. of Evolutionary Genomics next Feb/March
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Compilowhat?}
+  \begin{itemize}
+    \item Compilospecies = Invasive Composite Polyploid Species = Many grasses
+    \pause
+    \item \textit{Brachypodium} species
+    \pause
+    \item Genomics is hard, large, weird, polypolid genomes
+    \pause
+    \item Bottleneck is informatics
+    \pause
+    \item Hence, project!
+  \end{itemize}
+\end{frame}
+
+\end{document}
