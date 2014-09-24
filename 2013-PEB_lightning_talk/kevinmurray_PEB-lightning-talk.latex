@@ -1,5 +1,5 @@
 \documentclass[handout]{beamer}
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../latex_bkground_topleft.pdf}}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../cpeb_bkground_topleft.pdf}}
 \usepackage{textcomp}
 \usepackage{caption}
 \usepackage{listings}
@@ -15,7 +15,7 @@
 
 \begin{document}
 {
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../latex_bkground_centered.pdf}}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../cpeb_bkground_centered.pdf}}
 \begin{frame}
   \titlepage
   \vfill
