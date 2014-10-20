@@ -1,0 +1,1606 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="GBS.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="StopL"
+       style="overflow:visible">
+      <path
+         id="path4256"
+         d="M 0.0,5.65 L 0.0,-5.65"
+         style="fill:none;fill-opacity:0.75000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path4108"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path4114"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-5"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4108-3"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-55"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4108-7"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6111"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6113"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4108-6"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-7"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4108-4"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-9"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4108-76"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-0"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4108-79"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6542"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6544"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="242.8507"
+     inkscape:cy="427.7083"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1276"
+     inkscape:window-height="1577"
+     inkscape:window-x="1280"
+     inkscape:window-y="19"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#b0d6f0;fill-opacity:0.74901961;stroke:none"
+       id="rect2987"
+       width="200"
+       height="20"
+       x="152.85722"
+       y="166.64792"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#ff4053;fill-opacity:0.74901961;stroke:none"
+       id="rect2989-5-7"
+       width="20"
+       height="10"
+       x="152.85722"
+       y="166.64792"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#ff4053;fill-opacity:0.74901961;stroke:none"
+       id="rect2989-5-7-4"
+       width="20"
+       height="10"
+       x="332.85724"
+       y="176.64792"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#6bdf84;fill-opacity:0.74901961;stroke:none"
+       id="rect3820"
+       width="40"
+       height="20"
+       x="352.85724"
+       y="166.64792"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#6bdf84;fill-opacity:0.74901961;stroke:none"
+       id="rect3820-3"
+       width="40"
+       height="20"
+       x="112.85723"
+       y="166.64792"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#debe0d;fill-opacity:0.74901961;stroke:none"
+       id="rect3851"
+       width="60"
+       height="20"
+       x="52.857231"
+       y="166.64792"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#debe0d;fill-opacity:0.74901961;stroke:none"
+       id="rect3851-5"
+       width="60"
+       height="20"
+       x="392.85718"
+       y="166.64792"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="242.77324"
+       y="179.63034"
+       id="text3871"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         x="242.77324"
+         y="179.63034"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif"
+         id="tspan5723">Insert</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="122.8045"
+       y="179.63034"
+       id="text3871-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3873-0"
+         x="122.8045"
+         y="179.63034"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Bcd1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="61.406059"
+       y="178.85495"
+       id="text3896"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3898"
+         x="61.406059"
+         y="178.85495"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Fwd Adapt</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="402.09357"
+       y="178.85495"
+       id="text3896-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3898-2"
+         x="402.09357"
+         y="178.85495"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Rev Adapt</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="362.83575"
+       y="179.63034"
+       id="text3871-9-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         x="362.83575"
+         y="179.63034"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif"
+         id="tspan3942">Bcd2</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.09670401px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 53.550205,160.9336 118.987315,0"
+       id="path3967"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.09670389px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 333.38407,194.65834 118.98732,0"
+       id="path3967-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#b0d6f0;fill-opacity:0.74901961;stroke:none"
+       id="rect2987-7"
+       width="200"
+       height="20"
+       x="149.89331"
+       y="532.68597"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#ff4053;fill-opacity:0.74901961;stroke:none"
+       id="rect2989-7"
+       width="10"
+       height="20"
+       x="349.89334"
+       y="532.68597"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#ff4053;fill-opacity:0.74901961;stroke:none"
+       id="rect2989-5-1"
+       width="10"
+       height="20"
+       x="139.89331"
+       y="532.68597"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#ff4053;fill-opacity:0.74901961;stroke:none"
+       id="rect2989-5-7-0"
+       width="20"
+       height="10"
+       x="149.89331"
+       y="532.68597"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#ff4053;fill-opacity:0.74901961;stroke:none"
+       id="rect2989-5-7-4-0"
+       width="20"
+       height="10"
+       x="329.89334"
+       y="542.68597"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#6bdf84;fill-opacity:0.74901961;stroke:none"
+       id="rect3820-3-8"
+       width="40"
+       height="20"
+       x="40.404533"
+       y="502.82083"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#debe0d;fill-opacity:0.74901961;stroke:none"
+       id="rect3851-58"
+       width="60"
+       height="20"
+       x="79.893303"
+       y="532.68597"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="239.80937"
+       y="545.6684"
+       id="text3871-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3873-3"
+         x="239.80937"
+         y="545.6684"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="50.351807"
+       y="515.80328"
+       id="text3871-9-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3873-0-3"
+         x="50.351807"
+         y="515.80328"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Bcd1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="88.442131"
+       y="544.89301"
+       id="text3896-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3898-1"
+         x="88.442131"
+         y="544.89301"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Fwd Adapt</tspan></text>
+    <rect
+       style="fill:#debe0d;fill-opacity:0.74901961;stroke:none"
+       id="rect3851-58-9"
+       width="60"
+       height="20"
+       x="359.92508"
+       y="532.64032"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="368.8157"
+       y="544.84735"
+       id="text3896-5-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3898-2-0"
+         x="368.8157"
+         y="544.84735"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Rev Adapt</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.14147031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 40.63018,526.97168 128.89943,0"
+       id="path3967-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:8, 4;stroke-dashoffset:0;marker-end:url(#Arrow2Lend)"
+       d="m 52.745745,197.17183 58.783475,0"
+       id="path3967-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:8, 4;stroke-dashoffset:0;marker-end:url(#Arrow2Lend)"
+       d="m 452.96869,153.35149 -58.7834,0"
+       id="path3967-5-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#da48ff;fill-opacity:0.74901961;stroke:none"
+       id="rect5731"
+       width="110"
+       height="15"
+       x="112.85723"
+       y="189.65424"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="153.96074"
+       y="200.13666"
+       id="text5727"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan5729"
+         x="153.96074"
+         y="200.13666"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read 1</tspan></text>
+    <rect
+       style="fill:#da48ff;fill-opacity:0.74901961;stroke:none"
+       id="rect5731-0"
+       width="110"
+       height="15"
+       x="282.85724"
+       y="145.86911"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="323.96075"
+       y="156.35153"
+       id="text5727-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan5729-1"
+         x="323.96075"
+         y="156.35153"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read 2</tspan></text>
+    <rect
+       style="fill:#da48ff;fill-opacity:0.74901961;stroke:none"
+       id="rect5731-7"
+       width="240"
+       height="20"
+       x="128.03569"
+       y="233.42719"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 112.39934,196.88613 68.078895,233.37789"
+       id="path5777"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#6bdf84;fill-opacity:0.74901961;stroke:none"
+       id="rect3820-3-4"
+       width="40"
+       height="20"
+       x="67.909477"
+       y="233.41702"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:serif;-inkscape-font-specification:serif"
+       x="77.970024"
+       y="246.39944"
+       id="text3871-9-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3873-0-1"
+         x="77.970024"
+         y="246.39944"
+         style="font-size:8px;font-family:serif;-inkscape-font-specification:serif">Bcd1</tspan></text>
+    <rect
+       style="fill:#ff4053;fill-opacity:1;stroke:none"
+       id="rect2989-5-7-2"
+       width="20"
+       height="20"
+       x="108.0357"
+       y="233.42719"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="112.19976"
+       y="246.3432"
+       id="text5844"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan5846"
+         x="112.19976"
+         y="246.3432">RE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="234.23686"
+       y="246.40961"
+       id="text5727-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS2.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan5729-15"
+         x="234.23686"
+         y="246.40961"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read 1</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5874"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+         id="flowRegion5876"><rect
+           id="rect5878"
+           width="185.86807"
+           height="193.9493"
+           x="87.88327"
+           y="229.08786" /></flowRegion><flowPara
+         id="flowPara5880" /></flowRoot>    <g
+       id="g6407"
+       transform="translate(-85.714286,87.142861)">
+      <text
+         inkscape:export-ydpi="179.90161"
+         inkscape:export-xdpi="179.90161"
+         inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/combBcd.png"
+         sodipodi:linespacing="125%"
+         id="text5934"
+         y="217.54984"
+         x="116.42857"
+         style="font-size:12px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           y="217.54984"
+           x="116.42857"
+           id="tspan5936"
+           sodipodi:role="line">TGCG</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5938"
+           y="232.54984"
+           x="116.42857"
+           sodipodi:role="line">AGGAT</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5940"
+           y="247.54984"
+           x="116.42857"
+           sodipodi:role="line">TTCAGA</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5942"
+           y="262.54984"
+           x="116.42857"
+           sodipodi:role="line">CGCGGT</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5944"
+           y="277.54984"
+           x="116.42857"
+           sodipodi:role="line">GAATTCA</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5946"
+           y="292.54984"
+           x="116.42857"
+           sodipodi:role="line">CTACGGA</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5954"
+           y="307.54984"
+           x="116.42857"
+           sodipodi:role="line">....</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5948"
+           y="322.54984"
+           x="116.42857"
+           sodipodi:role="line">CCGGATAT</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5952"
+           y="337.54984"
+           x="116.42857"
+           sodipodi:role="line">TTCCTGGA</tspan></text>
+      <text
+         inkscape:export-ydpi="179.90161"
+         inkscape:export-xdpi="179.90161"
+         inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/combBcd.png"
+         sodipodi:linespacing="125%"
+         id="text5934-5"
+         y="217.54984"
+         x="246.12196"
+         style="font-size:12px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           y="217.54984"
+           x="246.12196"
+           id="tspan5936-0"
+           sodipodi:role="line">TGCG</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5938-5"
+           y="232.54984"
+           x="246.12196"
+           sodipodi:role="line">AGGAT</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5940-1"
+           y="247.54984"
+           x="246.12196"
+           sodipodi:role="line">TTCAGA</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5942-9"
+           y="262.54984"
+           x="246.12196"
+           sodipodi:role="line">CGCGGT</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5944-5"
+           y="277.54984"
+           x="246.12196"
+           sodipodi:role="line">GAATTCA</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5946-8"
+           y="292.54984"
+           x="246.12196"
+           sodipodi:role="line">CTACGGA</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5954-8"
+           y="307.54984"
+           x="246.12196"
+           sodipodi:role="line">....</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5948-7"
+           y="322.54984"
+           x="246.12196"
+           sodipodi:role="line">CCGGATAT</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:Sans Bold"
+           id="tspan5952-8"
+           y="337.54984"
+           x="246.12196"
+           sodipodi:role="line">TTCCTGGA</tspan></text>
+      <flowRoot
+         inkscape:export-ydpi="179.90161"
+         inkscape:export-xdpi="179.90161"
+         inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/combBcd.png"
+         transform="translate(-213.89035,17.142857)"
+         style="font-size:28px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         id="flowRoot6004"
+         xml:space="preserve"><flowRegion
+           id="flowRegion6006"><rect
+             style="font-size:28px"
+             y="236.6479"
+             x="415.71429"
+             height="35.000011"
+             width="17.857151"
+             id="rect6008" /></flowRegion><flowPara
+           style="font-size:28px"
+           id="flowPara6010">x</flowPara></flowRoot>      <flowRoot
+         inkscape:export-ydpi="179.90161"
+         inkscape:export-xdpi="179.90161"
+         inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/combBcd.png"
+         transform="translate(-86.357117,22.474148)"
+         style="font-size:28px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         id="flowRoot6004-8"
+         xml:space="preserve"><flowRegion
+           id="flowRegion6006-3"><rect
+             style="font-size:28px"
+             y="236.6479"
+             x="415.71429"
+             height="32.857155"
+             width="29.285723"
+             id="rect6008-5" /></flowRegion><flowPara
+           style="font-size:28px"
+           id="flowPara6010-4">=</flowPara></flowRoot>      <text
+         inkscape:export-ydpi="179.90161"
+         inkscape:export-xdpi="179.90161"
+         inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/combBcd.png"
+         sodipodi:linespacing="125%"
+         id="text6039"
+         y="217.54984"
+         x="378.49506"
+         style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+           y="217.54984"
+           x="378.49506"
+           id="tspan6041"
+           sodipodi:role="line">CTCG     ATGAAAG 1_A1</tspan><tspan
+           id="tspan6061"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+           y="232.54984"
+           x="378.49506"
+           sodipodi:role="line">TGCA     ATGAAAG 1_A2</tspan><tspan
+           id="tspan6065"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+           y="247.54984"
+           x="378.49506"
+           sodipodi:role="line">ACTA     ATGAAAG 1_A3</tspan><tspan
+           id="tspan6067"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+           y="262.54984"
+           x="378.49506"
+           sodipodi:role="line">AACT     ATGAAAG 1_A5</tspan><tspan
+           id="tspan6059"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+           y="277.54984"
+           x="378.49506"
+           sodipodi:role="line">......</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+           id="tspan6043"
+           y="292.54984"
+           x="378.49506"
+           sodipodi:role="line">GCTGTGGA CTTGCTT 12_H8</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+           id="tspan6045"
+           y="307.54984"
+           x="378.49506"
+           sodipodi:role="line">GTGAGGGT CTTGCTT 12_H10</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+           id="tspan6047"
+           y="322.54984"
+           x="378.49506"
+           sodipodi:role="line">TATCGGGA CTTGCTT 12_H11</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+           id="tspan6049"
+           y="337.54984"
+           x="378.49506"
+           sodipodi:role="line">TTCCTGGA CTTGCTT 12_H12</tspan><tspan
+           id="tspan6053"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+           y="352.54984"
+           x="378.49506"
+           sodipodi:role="line" /><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+           id="tspan6051"
+           y="367.54984"
+           x="378.49506"
+           sodipodi:role="line" /></text>
+      <text
+         inkscape:export-ydpi="179.90161"
+         inkscape:export-xdpi="179.90161"
+         inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/combBcd.png"
+         sodipodi:linespacing="125%"
+         id="text6081"
+         y="378.29065"
+         x="116.42857"
+         style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="378.29065"
+           x="116.42857"
+           id="tspan6083"
+           sodipodi:role="line">96 R1</tspan></text>
+      <text
+         inkscape:export-ydpi="179.90161"
+         inkscape:export-xdpi="179.90161"
+         inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/combBcd.png"
+         sodipodi:linespacing="125%"
+         id="text6085"
+         y="378.29065"
+         x="246.12196"
+         style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="378.29065"
+           x="246.12196"
+           id="tspan6087"
+           sodipodi:role="line">12 R2</tspan><tspan
+           id="tspan6097"
+           y="400.79065"
+           x="246.12196"
+           sodipodi:role="line" /></text>
+      <text
+         inkscape:export-ydpi="179.90161"
+         inkscape:export-xdpi="179.90161"
+         inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/combBcd.png"
+         sodipodi:linespacing="125%"
+         id="text6089"
+         y="378.29065"
+         x="410.28571"
+         style="font-size:18px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           id="tspan6093"
+           y="378.29065"
+           x="410.28571"
+           sodipodi:role="line">1152 pairs</tspan></text>
+    </g>
+    <rect
+       style="fill:#b0d6f0;fill-opacity:0.74901961;stroke:none"
+       id="rect2987-3"
+       width="200"
+       height="20"
+       x="151.83257"
+       y="54.928913"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#ff4053;fill-opacity:0.74901961;stroke:none"
+       id="rect2989-5-7-20"
+       width="20"
+       height="10"
+       x="151.83257"
+       y="54.928913"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#ff4053;fill-opacity:0.74901961;stroke:none"
+       id="rect2989-5-7-4-5"
+       width="20"
+       height="10"
+       x="331.83255"
+       y="64.928909"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#6bdf84;fill-opacity:0.74901961;stroke:none"
+       id="rect3820-5"
+       width="40"
+       height="20"
+       x="351.83255"
+       y="54.928913"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#6bdf84;fill-opacity:0.74901961;stroke:none"
+       id="rect3820-3-9"
+       width="40"
+       height="20"
+       x="111.83257"
+       y="54.928913"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#debe0d;fill-opacity:0.74901961;stroke:none"
+       id="rect3851-56"
+       width="60"
+       height="20"
+       x="51.832561"
+       y="54.928913"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#debe0d;fill-opacity:0.74901961;stroke:none"
+       id="rect3851-5-04"
+       width="60"
+       height="20"
+       x="391.83255"
+       y="54.928913"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="241.74858"
+       y="67.911331"
+       id="text3871-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         x="241.74858"
+         y="67.911331"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif"
+         id="tspan5723-4">Insert</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="121.77983"
+       y="67.911331"
+       id="text3871-9-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3873-0-7"
+         x="121.77983"
+         y="67.911331"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Bcd1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="60.38139"
+       y="67.135941"
+       id="text3896-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3898-20"
+         x="60.38139"
+         y="67.135941"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Fwd Adapt</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="401.06888"
+       y="67.135941"
+       id="text3896-5-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3898-2-9"
+         x="401.06888"
+         y="67.135941"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Rev Adapt</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="361.81107"
+       y="67.911331"
+       id="text3871-9-7-86"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         x="361.81107"
+         y="67.911331"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif"
+         id="tspan3942-6">Bcd2</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.09670401px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 52.525531,49.214599 118.987309,0"
+       id="path3967-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.09670389px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 332.35939,82.939339 118.98731,0"
+       id="path3967-4-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:8, 4;stroke-dashoffset:0;marker-end:url(#Arrow2Lend)"
+       d="m 51.721071,85.452829 58.783469,0"
+       id="path3967-5-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:8, 4;stroke-dashoffset:0;marker-end:url(#Arrow2Lend)"
+       d="m 451.94405,41.632489 -58.78346,0"
+       id="path3967-5-5-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#da48ff;fill-opacity:0.74901961;stroke:none"
+       id="rect5731-2"
+       width="110"
+       height="15"
+       x="111.83257"
+       y="77.935196"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="152.93608"
+       y="88.417618"
+       id="text5727-12"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan5729-9"
+         x="152.93608"
+         y="88.417618"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read 1</tspan></text>
+    <rect
+       style="fill:#da48ff;fill-opacity:0.74901961;stroke:none"
+       id="rect5731-0-0"
+       width="110"
+       height="15"
+       x="281.83255"
+       y="34.150105"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="322.93607"
+       y="44.632526"
+       id="text5727-1-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBS1.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan5729-1-1"
+         x="322.93607"
+         y="44.632526"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read 2</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.26861799;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:10.14894368, 5.07447184;stroke-dashoffset:0;marker-end:url(#Arrow2Lend)"
+       d="m 70.453114,562.37919 97.962486,0"
+       id="path3967-5-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#da48ff;fill-opacity:0.74901961;stroke:none"
+       id="rect5731-3"
+       width="80"
+       height="15"
+       x="170.3772"
+       y="555.60248"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="196.57837"
+       y="566.0849"
+       id="text5727-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan5729-8"
+         x="196.57837"
+         y="566.0849"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read 1</tspan></text>
+    <rect
+       style="fill:#da48ff;fill-opacity:0.74901961;stroke:none"
+       id="rect5731-7-1"
+       width="200"
+       height="20"
+       x="124.96644"
+       y="599.37543"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 169.91928,562.83439 -44.32044,36.49176"
+       id="path5777-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 251.07402,563.37057 73.60615,35.90003"
+       id="path5777-4-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="204.68459"
+       y="611.90503"
+       id="text5727-4-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan5729-15-9"
+         x="204.68459"
+         y="611.90503"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read 1</tspan></text>
+    <rect
+       style="fill:#6bdf84;fill-opacity:0.74901961;stroke:none"
+       id="rect3820-3-8-7"
+       width="40"
+       height="20"
+       x="419.41385"
+       y="562.50543"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.14147031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 330.28879,558.35459 128.89944,0"
+       id="path3967-8-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.26861799;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:10.14894368, 5.07447184;stroke-dashoffset:0;marker-end:url(#Arrow2Lend)"
+       d="m 429.36529,522.99177 -97.96249,0"
+       id="path3967-5-2-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="429.29861"
+       y="575.48785"
+       id="text3871-9-7-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         x="429.29861"
+         y="575.48785"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif"
+         id="tspan3942-0">Bcd2</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 223.57143,196.64789 144.28572,37.14286"
+       id="path6405"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#da48ff;fill-opacity:0.74901961;stroke:none"
+       id="rect5731-0-3"
+       width="80"
+       height="15"
+       x="249.71806"
+       y="515.1217"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="275.74344"
+       y="525.60413"
+       id="text5727-1-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/GBSbetter.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan5729-1-13"
+         x="275.74344"
+         y="525.60413"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read 2</tspan></text>
+    <rect
+       style="fill:#b0d6f0;fill-opacity:0.74901961;stroke:none"
+       id="rect2987-7-6"
+       width="220"
+       height="20"
+       x="138.55553"
+       y="723.95001"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#6bdf84;fill-opacity:0.74901961;stroke:none"
+       id="rect3820-3-8-2"
+       width="40"
+       height="20"
+       x="39.066757"
+       y="694.0849"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#debe0d;fill-opacity:0.74901961;stroke:none"
+       id="rect3851-58-4"
+       width="60"
+       height="20"
+       x="78.555527"
+       y="723.95001"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="238.47159"
+       y="736.93243"
+       id="text3871-1-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3873-3-6"
+         x="238.47159"
+         y="736.93243"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="49.01403"
+       y="707.06732"
+       id="text3871-9-1-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3873-0-3-0"
+         x="49.01403"
+         y="707.06732"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Bcd1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="87.104355"
+       y="736.15704"
+       id="text3896-0-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3898-1-7"
+         x="87.104355"
+         y="736.15704"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Fwd Adapt</tspan></text>
+    <rect
+       style="fill:#debe0d;fill-opacity:0.74901961;stroke:none"
+       id="rect3851-58-9-0"
+       width="60"
+       height="20"
+       x="358.58731"
+       y="723.90436"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="367.47794"
+       y="736.11139"
+       id="text3896-5-3-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan3898-2-0-1"
+         x="367.47794"
+         y="736.11139"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Rev Adapt</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.14147031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 39.292402,718.23574 128.899438,0"
+       id="path3967-8-62"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.26861799;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:10.14894368, 5.07447184;stroke-dashoffset:0;marker-end:url(#Arrow2Lend)"
+       d="m 69.115335,753.64325 97.962495,0"
+       id="path3967-5-2-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <rect
+       style="fill:#da48ff;fill-opacity:0.74901961;stroke:none"
+       id="rect5731-3-3"
+       width="80"
+       height="15"
+       x="169.03941"
+       y="746.86652"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="195.24059"
+       y="757.34894"
+       id="text5727-7-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan5729-8-9"
+         x="195.24059"
+         y="757.34894"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read 1</tspan></text>
+    <rect
+       style="fill:#da48ff;fill-opacity:0.74901961;stroke:none"
+       id="rect5731-7-1-9"
+       width="200"
+       height="20"
+       x="123.62866"
+       y="790.63947"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 168.58151,754.09845 -44.32045,36.49176"
+       id="path5777-6-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 249.73625,754.63463 73.60615,35.90003"
+       id="path5777-4-5-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="203.3468"
+       y="803.16907"
+       id="text5727-4-1-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan5729-15-9-5"
+         x="203.3468"
+         y="803.16907"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read 1</tspan></text>
+    <rect
+       style="fill:#6bdf84;fill-opacity:0.74901961;stroke:none"
+       id="rect3820-3-8-7-8"
+       width="40"
+       height="20"
+       x="418.07608"
+       y="753.76947"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.14147031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 328.95102,749.61865 128.89944,0"
+       id="path3967-8-6-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.26861799;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:10.14894368, 5.07447184;stroke-dashoffset:0;marker-end:url(#Arrow2Lend)"
+       d="m 428.02752,714.25583 -97.96249,0"
+       id="path3967-5-2-2-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="427.96085"
+       y="766.75189"
+       id="text3871-9-7-8-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         x="427.96085"
+         y="766.75189"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif"
+         id="tspan3942-0-7">Bcd2</tspan></text>
+    <rect
+       style="fill:#da48ff;fill-opacity:0.74901961;stroke:none"
+       id="rect5731-0-3-3"
+       width="80"
+       height="15"
+       x="248.38028"
+       y="706.38574"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       x="274.40567"
+       y="716.86816"
+       id="text5727-1-9-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan5729-1-13-0"
+         x="274.40567"
+         y="716.86816"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Read 2</tspan></text>
+    <rect
+       style="fill:#ff4053;fill-opacity:1;stroke:none"
+       id="rect6661"
+       width="30"
+       height="20"
+       x="137.85713"
+       y="694.0849"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="140.32002"
+       y="706.99701"
+       id="text6663"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         id="tspan6665"
+         x="140.32002"
+         y="706.99701"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif">Site A</tspan></text>
+    <rect
+       style="fill:#ff4053;fill-opacity:1;stroke:none"
+       id="rect6661-7"
+       width="30"
+       height="20"
+       x="328.92856"
+       y="753.07648"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="331.39145"
+       y="765.98859"
+       id="text6663-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/kevin/uw/phd/presentations/2014-MapNet_barcoding/img/NextRad.png"
+       inkscape:export-xdpi="179.90161"
+       inkscape:export-ydpi="179.90161"><tspan
+         sodipodi:role="line"
+         x="331.39145"
+         y="765.98859"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Serif;-inkscape-font-specification:Serif"
+         id="tspan6680">Site B</tspan></text>
+  </g>
+</svg>
