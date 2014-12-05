@@ -30,7 +30,7 @@
 
 
 \begin{frame}{About Me}
-  \begin{columns}[b]
+  \begin{columns}[t]
     \column{0.6\textwidth}
     \begin{itemize}
       \item Bioinformatician @ Borevitz Lab
@@ -40,33 +40,38 @@
         \item Phenomics (Image analysis)
         \item Sample tracking, data standards, HPC
       \end{itemize}
-      \item Starting PhD in Bioinformatics next year
+      \item Starting PhD in Bioinformatics next year (Borevitz/For\^{e}t)
     \end{itemize}
     \column{0.4\textwidth}
-    \includegraphics[width=0.8\textwidth]{img/bigdata.png}
+    \begin{center}
+      \includegraphics[width=0.8\textwidth]{img/bigdata.png}
+    \end{center}
   \end{columns}
+  \vfill
 \end{frame}
 
 
 \begin{frame}{The High Throughput Problem}
-  \begin{columns}[b]
+  \begin{columns}[t]
     \column{0.6\textwidth}
     \begin{itemize}
-      \item Sequencing $==$  firehose of data
+      \item Sequencing $==$  fire hose of data
       \item Need to put $>$ 1 sample / lane
       \item Give BRF only one tube
       \item $\therefore$ we need multiplexing
       \item $\therefore$ de-multiplexing
     \end{itemize}
     \column{0.4\textwidth}
-    \includegraphics<1|only@1>[width=\textwidth]{img/hiseq.png}
-    \includegraphics<2|only@2>[width=0.8\textwidth]{img/firehose.jpg}
+    \begin{center}
+      \includegraphics<1|only@1>[width=\textwidth]{img/hiseq.png}
+      \includegraphics<2|only@2>[width=0.8\textwidth]{img/firehose.jpg}
+    \end{center}
   \end{columns}
 \end{frame}
 
 
 \begin{frame}{DNA/Molecular Barcoding}
-  \begin{columns}[b]
+  \begin{columns}[t]
     \column{0.5\textwidth}
     \begin{itemize}
       \item DNA fragment contains per-sample unique seq.
@@ -74,7 +79,7 @@
     \end{itemize}
     \column{0.5\textwidth}
     \begin{itemize}
-      \item Must be balanced \& staggered
+      \item Must be balanced
       \item Hamming distance $>$2
     \end{itemize}
   \end{columns}
@@ -84,7 +89,7 @@
 \end{frame}
 
 \begin{frame}{So you need a demulitplexer?}
-  \begin{columns}[b]
+  \begin{columns}[t]
     \column{0.5\textwidth}
     \begin{itemize}
       \item Some studies use kit protocols
@@ -104,7 +109,7 @@
 \end{frame}
 
 \begin{frame}{De-multiplex with \texttt{AXE}}
-  \begin{columns}[b]
+  \begin{columns}[t]
     \column{0.6\textwidth}
     \begin{itemize}
       \item Barcoding scheme requires advanced de-multiplexing
@@ -115,7 +120,9 @@
       \item GNU GPL v3+
     \end{itemize}
     \column{0.4\textwidth}
-    \includegraphics[width=\textwidth]{img/axe.png}
+    \begin{center}
+      \includegraphics[width=\textwidth]{img/axe.png}
+    \end{center}
   \end{columns}
 \end{frame}
 
@@ -124,7 +131,7 @@
   \begin{itemize}
     \item<1-> {Distance between two strings of equal length \\
        \texttt{ACTGTG} \\
-       \texttt{  x x } $= 2$\\
+       \texttt{..x.x.} $= 2$\\
        \texttt{ACAGCG}}
      \item<2|only@2> {Is a poor measure of seq. divergence:\\
        \texttt{ACTGTG} \\
@@ -135,32 +142,34 @@
        \texttt{x.....} $= 1$ \\
        \texttt{-CTGTG}}
      \item<4-> \mint{python}|sum([0 if s1[i] == s2[i] else 1 for i in range(l)])|
-     \item<5-> {Good Enough\texttrademark}
+     \item<5-> Conservative, Good Enough\texttrademark
   \end{itemize}
   \end{minipage}
 \end{frame}
 
 \begin{frame}{A Forest of Tries?}
-  \begin{columns}[b]
+  \begin{columns}[t]
     \column{0.6\textwidth}
     \begin{itemize}
       \item<1-> Trie is k-ary tree for k letter alphabet
-      \item<2-> Lookups are $\mathcal{O}(l)$
+      \item<2-> Lookups are $\mathcal{O}(l)$ for keys of $l$
       \item<3-> i.e., $\mathcal{O}(1)$ WRT number of items, \textit{a la}
                 hash-tables
       \item<4-> Memory efficient (prefixes collapsed)
-      \item<5-> Prefix lookups very fast
+      \item<5-> Prefix lookups very fast (re\textbf{trie}val)
     \end{itemize}
     \column{0.4\textwidth}
-    \includegraphics<1->[width=\textwidth]{img/trie.png}
+    \begin{center}
+      \includegraphics<1->[width=\textwidth]{img/trie.png}
+    \end{center}
   \end{columns}
 \end{frame}
 
 \begin{frame}{Hamming Mismatch Trie}
-  \begin{columns}[b]
+  \begin{columns}[t]
     \column{0.6\textwidth}
     \begin{itemize}
-      \item Pre-calculate all strings with Hamming dist $d$ from search
+      \item Pre-calculate all strings with Hamming dist $d$ from target
       \item Make trie, do lookups
       \item Essentially a FSM
     \end{itemize}
@@ -173,7 +182,7 @@
 \end{frame}
 
 \begin{frame}{The Algorithm}
-  \begin{columns}[b]
+  \begin{columns}[t]
     \column{0.6\textwidth}
     \begin{itemize}
       \item Take read
@@ -200,29 +209,78 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{I THINK\ldots}
+\begin{frame}{Benchmarking}
   \begin{itemize}
-    \item WARNING: everything I say from here may well be bullshit
-    \item These statements are thought through, but please, tell me if I'm
-      wrong
-    \pause
-    \item Ok, time for an IPython Notebook
+    \item Contrived example:
+    \begin{itemize}
+      \item \texttt{wgsim} 500k reads from \textit{A. thaliana} ChrC
+      \item Add \texttt{AAAA}, \texttt{CCCC}, \texttt{GGGG}, \texttt{TTTT} to
+        $5'$
+      \item Insert 1 mismatch
+    \end{itemize}
+    \item ``GBS-like'' example:
+    \begin{itemize}
+      \item Different length barcodes
+      \item RE site in reads
+      \item \texttt{AAAA}, \texttt{CCCC}, \texttt{GGGG}, \texttt{TTTT},
+            \texttt{AAAAAAAA}, \texttt{CCCCCCCC}, \texttt{GGGGGGGG},
+            \texttt{TTTTTTTT}
+      \item Mismatches in RE and barcode
+    \end{itemize}
+    \item Measure reads assigned, USER + SYS time, reads/sec
+    \item Cross-compare to \texttt{sabre}, \texttt{fastx}, \texttt{flexbar}
+    \item I'll show you how it's done if we have time
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Benchmarking Results}
+  \begin{center}
+    \includegraphics<1|only@1>[width=0.8\textwidth]{img/500k_reads_assigned.pdf}
+    \includegraphics<2|only@2>[width=0.8\textwidth]{img/500k_reads_assigned_zoom.pdf}
+    \includegraphics<3|only@3>[width=0.8\textwidth]{img/500k_rps.pdf}
+    \includegraphics<4|only@4>[width=0.8\textwidth]{img/gbs_reads_assigned.pdf}
+  \end{center}
+  \vfill
+\end{frame}
 
+\begin{frame}{Testing Axe}
+  \begin{itemize}
+    \item If we have time, let's look at the IPython Notebook, it contains a
+      lot more benchmarking.
+    \item Or, I'll show you how to use it on the CLI
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Conclusions}
+  \begin{itemize}
+    \item Made a fast, accurate demultiplexer
+    \begin{itemize}
+      \item More barcoding modes supported
+      \item Faster than all others I've seen
+      \item Just as or more accurate as slower algorithms
+    \end{itemize}
+    \item Future work
+    \begin{itemize}
+      \item Adaptor removal: load adaptors in, do it backwards?
+      \item Levenshtein distance? NDFSM?
+      \item Integrate w/ sample tracking (w/ Aaron, Cam @ GDU)
+      \item Code audit \& tests
+    \end{itemize}
+  \end{itemize}
+\end{frame}
 
 \begin{frame}{Thanks}
   \begin{itemize}
-    \item Justin Borevitz
+    \item Justin Borevitz \& Norman Warthmann
     \item Sylvain For\^{e}t
     \item Aaron Chuah
     \item Cam Jack
     \item Jared Streich \& Collin Ahrens ($\beta$-testers)
   \end{itemize}
+  \pause
   \begin{center}
     \includegraphics[width=0.6\textwidth]{img/spaninq.jpg}
   \end{center}
 \end{frame}
 
-\end{document}
+end{document}
