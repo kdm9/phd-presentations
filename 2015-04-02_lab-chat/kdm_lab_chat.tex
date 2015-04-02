@@ -1,0 +1,104 @@
+\documentclass[t]{beamer}
+\usepackage{textcomp}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{minted}
+
+\usetheme{default}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../cpeb_bkground_topleft.pdf}}
+
+\setbeamertemplate{frametitle}{
+  \centering\vspace{1mm}\insertframetitle\par\vspace{3mm}
+}
+
+\title{Lab chat on my PhD
+  \subtitle{``Novel informatic sequence analysis approaches to dissect complex
+              plant genomes''}
+\author{Kevin Murray\\\tiny{\texttt{@kdmurray91}\\kevin@kdmurray.id.au}}
+\institute{Borevitz Lab, ANU}
+\date{\today}
+}
+
+\begin{document}
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../cpeb_bkground_centered.pdf}}
+\begin{frame}
+  \titlepage
+  \vfill
+\end{frame}
+}
+
+\begin{frame}{What?}
+  \begin{itemize}
+    \item Novel algorithms to analyse large-scale genomics data
+  \pause
+    \item Our wish-list:
+    \begin{itemize}
+      \item Reference \& alignment free
+      \item Tolerates any sequencing platform
+      \item Works with Borevitz-style ``wide and shallow'' expts: e.g. 1000
+        samples at 1x
+    \end{itemize}
+  \pause
+    \item \textit{``\ldots large data sets and high error rates combine to
+                    provide a \ldots challenge: it is now straightforward to
+                    generate data sets that cannot easily be analysed''}
+                    --- C T Brown \textit{et al.} (2012)
+  \pause
+    \item e.g: Norman \& I analysing $\approx$20TB 3k rice genomes data. Our
+      supercomputer allocation is 30TB.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{How?}
+  \begin{itemize}
+    \item $k$-mer analysis: analyse $k$-length words of sequence
+    \begin{itemize}
+      \item Fast
+      \item Constant-memory (with \texttt{khmer})
+      \item Scaleable (linear time w/ number of samples)
+      \item Parallelisable (within \& across nodes)
+    \end{itemize}
+  \pause
+    \item Multi-layered ``zooming'' analysis
+      \begin{itemize}
+        \item First pass basic clustering
+        \item Error correction
+        \item Population graph ``alignment''
+        \item Variant calling
+      \end{itemize}
+  \pause
+    \item In-silico experiment-driven development (new paradigm for me)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{What have I been up to}
+  \begin{itemize}
+    \item $k$-mer based clustering
+  \pause
+    \begin{itemize}
+      \item In collaboration w/ Sylvain Foret, Cheng-Soon Ong, Christfried
+        Webers (NICTA)
+  \pause
+      \item Extending work in alignment-free sequence comparison (SF) and
+        text/document clustering (C-SO, CW @ NICTA).
+  \pause
+      \item Using Titus Brown's \texttt{khmer} (contributed a lot of code
+        myself)
+  \pause
+      \item Initial results mixed: promising \& and bit depressing
+  \pause
+      \item New C++ implementation: Can compute 100x100 matrix in ~10 mins on
+        16 CPUs
+      \item Hashing takes $\approx$ 10mins, uses $\approx$ 1GB/sample.
+  \pause
+      \item Norman, Sylvain, Cheng-Soon and Chris working on new metrics when
+            SF \& I are back
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
