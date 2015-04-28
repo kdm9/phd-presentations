@@ -53,21 +53,21 @@
 \begin{frame}{Starting at the start\ldots}
   \begin{itemize}
     \item \textbf{Experimental design is key}
-    \begin{itemize}
-      \item Design of sampling: randomisation at each step
-      \item Replication vs coverage trade-off
-      \item Speed is essential during collection: responses can be fast
-    \end{itemize}
+    \pause
+    \item Design of sampling: randomisation at each step
+    \pause
+    \item Speed is essential during collection: responses can be fast
+    \pause
+    \item Replication vs coverage trade-off
     \pause
     \item Example experiment:
     \begin{itemize}
-      \item Col-0
-      \item Three growth conditions
+      \item Arabdopsis (Col-0)
+      \item Three dynamic growth conditions
       \item Before and after 1000$\mu$E light treatment
-      \item 3 biological reps each group
+      \item 4 biological reps each group
       \item Tissue harvested within 60 seconds of end of stress
       \item TruSeq RNASeq kits, 12 samples/lane
-      \item 24 samples
     \end{itemize}
   \end{itemize}
 \end{frame}
@@ -76,7 +76,8 @@
   \begin{itemize}
     \item Given the same amount of sequencing, go deep or wide?
     \pause
-    \item For our experiments, \textbf{wide, more reps, almost always better}
+    \item For our experiments: wide, more samples, almost always better
+    \item \textbf{Your mileage may vary!}
     \pause
     \begin{figure}[h]
       \begin{center}
@@ -84,7 +85,6 @@
       \end{center}
     \end{figure}
     \pause
-    \item \textbf{Your mileage may vary!}
     \item \tiny{See Kliebenstein, (2012) FIPS: “Exploring the Shallow End;
                 Estimating Information Content in Transcriptomics Studies.”}
   \end{itemize}
@@ -92,15 +92,21 @@
 
 \begin{frame}{Sequence analysis}
   \begin{itemize}
-    \item Data is rawer now than with microarrays
+    \item Data is rawer than with microarrays
     \begin{itemize}
-      \item Needs significant computational resources
+      \item Needs summarisation to counts: \textit{``sequence analysis''}
       \item At large scale, can be a bottleneck
     \end{itemize}
     \pause
     \item Have developed pipelines to do this efficiently
-    \item \url{https://github.com/kdmurray91/RNAseqPipeline}
-    \item \url{https://github.com/pedrocrisp/NGS-pipelines}
+    \pause
+    \item Many re-analyis runs, not on supercomputer
+    \pause
+    \item Faster than others by $>2-3$x, no loss in accuracy
+    \pause
+    \item Open source, public:
+    \item \tiny{\url{https://github.com/kdmurray91/RNAseqPipeline}\\
+                \url{https://github.com/pedrocrisp/NGS-pipelines}}
   \end{itemize}
 \end{frame}
 
@@ -132,29 +138,14 @@
           \item Diagnostic plots \textbf{highly recommended!}
       \end{itemize}
   \end{columns}
+  \tiny{Robinson \& Oshlack (2010); Liao \textit{et al.} (2013a; 2013b);\\
+  Robinson \textit{et al.} (2013); Young \textit{et al.} (2010)}
 \end{frame}
 
-\begin{frame}{Pipeline performance}
+\begin{frame}[c]{A Change of Pace}
   \begin{itemize}
-    \item Outperforms others by $>2-3$x
+    \item Back to the slow, simple world of DNA for a moment\ldots
   \end{itemize}
-  \begin{figure}[h]
-    \begin{center}
-      \includegraphics[width=\textwidth]{img/pltimes.pdf}
-    \end{center}
-  \end{figure}
-\end{frame}<++>
-
-
-\begin{frame}{MDS Plots save time!}
-  \begin{itemize}
-    \item If your reps don't cluster, time to cry into beer.
-  \end{itemize}
-  \begin{figure}[h]
-    \begin{center}
-      \includegraphics[width=0.6\textwidth]{img/txv-res-plotmds.pdf}
-    \end{center}
-  \end{figure}
 \end{frame}
 
 \begin{frame}{Existing DNA variation pipelines}
@@ -175,16 +166,17 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Novel algorithms for DNA variaiton}
+\begin{frame}{Novel algorithms}
   \begin{itemize}
     \item My PhD topic
   \pause
     \item Our wish-list:
     \begin{itemize}
-      \item Reference \& alignment free
-      \item Tolerates any sequencing kind
       \item Works with ``wide and shallow'' experiments: e.g. 1000 samples at
             1x
+      \item Reference \& alignment free
+      \item Tolerates any sequencing kind
+      \item \textit{Free, Open souce, Open Data}
     \end{itemize}
   \pause
     \item e.g: gearing up to sequence 7500+ Eucalyptus, generating over 10 TB
@@ -201,12 +193,13 @@
 \end{frame}
 
 \begin{frame}{Thanks}
-      \begin{itemize}
-        \item Borevitz lab (Norman, Justin, Megan, Steve)
-        \item Pogson lab (Pete Crisp)
-        \item Genome Discovery Unit
-        \item Slides at \url{git.io/vfAof}
-      \end{itemize}
+  \begin{itemize}
+    \item Borevitz lab (Norman, Justin, Megan, Steve)
+    \item Pogson lab (Pete Crisp)
+    \item Genome Discovery Unit
+    \vfill
+    \item Slides at \url{git.io/vfAof}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Grab-bag of capabilities}
@@ -214,6 +207,29 @@
     \item Confirm genotype using RNAseq reads
     \item Check technical reps are true
   \end{itemize}
+\end{frame}
+
+\begin{frame}{Pipeline performance}
+  \begin{itemize}
+    \item Faster than others by $>2-3$x
+  \end{itemize}
+  \begin{figure}[h]
+    \begin{center}
+      \includegraphics[width=\textwidth]{img/pltimes.pdf}
+    \end{center}
+  \end{figure}
+\end{frame}
+
+
+\begin{frame}{MDS Plots save time!}
+  \begin{itemize}
+    \item If your reps don't cluster, time to cry into beer.
+  \end{itemize}
+  \begin{figure}[h]
+    \begin{center}
+      \includegraphics[width=0.6\textwidth]{img/txv-res-plotmds.pdf}
+    \end{center}
+  \end{figure}
 \end{frame}
 
 \end{document}
