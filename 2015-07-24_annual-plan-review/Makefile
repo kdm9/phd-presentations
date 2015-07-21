@@ -10,4 +10,6 @@ all: kdm-apr.pdf
 	$(TEX_COMPILER) $<
 
 clean:
-	rm -rf *.bcf *.aux *.bbl *.dvi *.blg *.log *.bak *.idx *.run.xml *-blx.bib *.nav *.out *.snm *.toc *.pyg *.tdo _minted-*/
+	rm -rf *.bcf *.aux *.bbl *.dvi *.blg *.log *.bak *.idx *.run.xml \
+		*-blx.bib *.nav *.out *.snm *.toc *.pyg *.tdo _minted-*/ \
+		*.pdf
