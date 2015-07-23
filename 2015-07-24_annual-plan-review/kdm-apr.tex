@@ -118,10 +118,11 @@
         \begin{itemize}
           \item<2> Fast
           \item<2> Constant-memory (using \texttt{khmer})
-          \item<2> Scaleable and parallelisable
+          \item<2> Scalable and parallelisable
           \item<2> Cross-scale
         \end{itemize}
       \end{itemize}
+      \vfill
     \column{0.4\textwidth}
     $k = 3$\\
     \texttt{ACGTGT}\\
@@ -130,7 +131,6 @@
     \texttt{~~GTG~}\\
     \texttt{~~~TGT}
   \end{columns}
-    \vfill
 \end{frame}
 
 \begin{frame}{Thesis overview}
@@ -144,18 +144,18 @@
     \item Chapter 1: $k$-mer based clustering of next gen sequencing
       \begin{itemize}
         \item First-pass basic clustering
-        \item \textit{population structure/kinship}
+        \item \textit{kinship/relatedness}
       \end{itemize}
     \pause
     \item Chapter 2: Machine learning for population genomics
       \begin{itemize}
-        \item Admixture and population divergence
-        \item \textit{population dynamics}
+        \item Detailed analysis of $k$-mer genetic distance
+        \item \textit{population structure, visualisation, sample classification}
       \end{itemize}
     \pause
     \item Chapter 3: Population ``genome-typing by sequencing''
       \begin{itemize}
-        \item Pan-genome read alignment \& variant calling
+        \item Pan-genome variant calling
         \item \textit{genome-wide genotyping through whole genome sequencing}
       \end{itemize}
   \end{itemize}
@@ -164,7 +164,6 @@
 \begin{frame}{$k$-mer based clustering}
   \begin{itemize}
     \item Extend alignment-free sequence comparison to raw NGS data
-    \pause
     \item Have released new software package: \texttt{kWIP}
       \begin{center}
         \includegraphics[width=0.9\textwidth]{img/kwip-doc-screenshot.png}
@@ -195,6 +194,7 @@
         \item Parallelised, $\approx$ 10 hrs for 96 rice samples.
         \item GNU GPL licensed, source code released on GitHub
       \end{itemize}
+    \item Paper in Prep
   \end{itemize}
 \end{frame}
 
@@ -208,27 +208,19 @@
         \item Recover known grouping w/ \texttt{kWIP}, not w/ unweighted IP
         \item Sensitive to read depth
       \end{itemize}
-      \pause
     \item Simulation
       \begin{itemize}
         \item Fake population genome sequencing studies
         \item Experiments in progress, early results positive
         \item Test limitations of \texttt{kwip}
       \end{itemize}
-      \pause
     \item Protocol optimisation
       \begin{itemize}
-        \item Optimal DNA hashing schemes
         \item Effect of varying $k$
+        \item Effect of CMS size
         \item More appropriate normalisation
       \end{itemize}
   \end{itemize}
-\end{frame}
-
-\begin{frame}{\texttt{kWIP} Distance Matrices}
-  \begin{center}
-    \includegraphics[width=\textwidth]{img/weight-unweight.png}
-  \end{center}
 \end{frame}
 
 
@@ -239,7 +231,6 @@
         \item Pairwise genetic distance: \texttt{kWIP}
         \item Admixture
         \item Online clustering (not all pairs)
-        \item $k$-mer $F_{ST}$
         \item Visualisation of distance and confidence
       \end{itemize}
       \pause
@@ -247,7 +238,7 @@
       \begin{itemize}
         \item Detect known introgression and admixture in 3000 rice lines
           dataset
-        \item Investigate on-line classifier for novel rice samples: ``who am i''
+        \item Investigate on-line classifier for novel rice samples: ``who am I''
         \item Develop HTML5 visualisation of \texttt{kWIP} output
       \end{itemize}
   \end{itemize}
@@ -263,26 +254,55 @@
         \item Paper in prep
       \end{itemize}
       \pause
-    \item Admixture and population divergence
+    \item Detail
       \begin{itemize}
         \item Collaborations started
         \item Initial experiments planned
       \end{itemize}
       \pause
-    \item Population pan-genome read alignment \& variant calling:
+    \item Population pan-genome variant calling:
         \textit{genome-typing by sequencing}
         \begin{itemize}
-          \item Initial collaborations started
+          \item Initial collaborations started (DIB-lab)
           \item Evaluating published tools
         \end{itemize}
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Side Projects}
+  \begin{itemize}
+    \item Reduced Representation Sequence Filtering
+      \begin{itemize}
+        \item de Bruijn graph based filter/normaliser
+        \item With GDU/ABC
+      \end{itemize}
+    \item $k$-mer approaches to detect horizontal gene transfer
+      \begin{itemize}
+        \item Collaboration with Adam Taranto
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Thanks}
+  \begin{itemize}
+    \item Justin, Norman, Sylvain, Gavin and Barry
+    \item Cheng Soon Ong, Christfried Webers
+    \item C. Titus Brown, Michael Crusoe, Camille Scott (DIB-lab) @ UC Davis
+    \item Kenneth McNally/IRRI
+    \item Yourselves
+  \end{itemize}
+\end{frame}
 
 \begin{frame}[shrink=20]{References}
   \printbibliography
   \vfill
   .
+\end{frame}
+
+\begin{frame}{\texttt{kWIP} Distance Matrices}
+  \begin{center}
+    \includegraphics[width=\textwidth]{img/weight-unweight.png}
+  \end{center}
 \end{frame}
 
 \begin{frame}{Population Re-structuring}
