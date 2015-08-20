@@ -91,15 +91,15 @@
 \begin{frame}{Rapid and Basic Clustering}
   \begin{itemize}
     \item Rough approximation of sample relatedness required
-      \begin{itemize}
-        \item Cheap and fast
-      \end{itemize}
     \item Enables a ``zooming'' approach to genetic analysis
+    \item Required for population resampling
   \end{itemize}
+  \pause
   \begin{center}
     \includegraphics<1>[width=\textwidth]{img/restruct-1}
     \includegraphics<2>[width=\textwidth]{img/restruct-2}
     \includegraphics<3>[width=\textwidth]{img/restruct-3}
+    \includegraphics<4>[width=\textwidth]{img/restruct-4}
   \end{center}
   \tiny{after \textcite{brachi_genome-wide_2011}}
 \end{frame}
@@ -161,7 +161,7 @@
         \item Easy set operations and inner product
         \item Implicit de Bruijn graph
         \item Implemented in C Titus Brown's \texttt{khmer}
-        \item AKA Countgraph, Counting Bloom Filter
+        \item AKA Countgraph
       \end{itemize}
   \end{itemize}
 \end{frame}
@@ -245,7 +245,7 @@
         \item \texttt{C++}, $>$2000 lines of code
         \item Uses \texttt{khmer} for $k$-mer counting \& hashing
         \item Parallelised, $\approx$ 10 hrs for 96 rice samples.
-        \item GNU GPL licensed, source code released on GitHub
+        \item GNU GPL licensed, source code on GitHub
       \end{itemize}
       \begin{center}
         \includegraphics[width=0.5\textwidth]{img/kwip-doc-screenshot.png}
@@ -265,20 +265,39 @@
     \item Simulation
       \begin{itemize}
         \item Fake population genome sequencing studies
-        \item Experiments in progress, early results positive
-        \item Test limitations of \texttt{kwip}
       \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{96 Rice Runs}
+  \begin{itemize}
+    \item Set of 96 rice runs from 12 samples (8 tech reps)
+    \item 6 samples each from 2 major groups (Indica, Japonica)
+    \item Expectations:
+      \begin{itemize}
+        \item All runs cluster into groups of 6 reps (12 samples)
+        \item Big split between two groups: 6 samples each
+      \end{itemize}
+    \item We see this with \texttt{kWIP}, not with Unweighted IP
   \end{itemize}
 \end{frame}
 
 \begin{frame}
   \begin{center}
-    \includegraphics[width=\textwidth]{img/distmat-both.png}
+    \includegraphics<1>[width=\textwidth]{img/distmat-both.png}
+    \includegraphics<2>[width=\textwidth]{img/dendro-both.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics<1>[width=0.6\textwidth]{img/dendro-wip.png}
+    \includegraphics<2>[width=0.6\textwidth]{img/dendro-ip.png}
   \end{center}
 \end{frame}
 
 
-\begin{frame}{Asymmetric Tree simulation}
+\begin{frame}{Simulation}
   \begin{itemize}
     \item Now for an Jupyter notebook
   \end{itemize}
@@ -287,9 +306,8 @@
 \begin{frame}{Thanks}
   \begin{itemize}
     \item My collaborators: Cheng Soon Ong, Christfried Webers, Norman Warthmann
-    \item Advisors: Justin, Norman, Sylvain, Gavin and Barry
-    \item C. Titus Brown, Michael Crusoe, Camille Scott (DIB-lab) @ UC Davis
-    \item Kenneth McNally/IRRI
+    \item \{Super,Ad\}visors: Justin, Sylvain, Gavin and Barry
+    \item \texttt{khmer} folks: C. Titus Brown, Michael Crusoe, Camille Scott (DIB-lab) @ UC Davis
     \item Yourselves
   \end{itemize}
 \end{frame}
