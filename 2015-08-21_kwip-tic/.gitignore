@@ -15,5 +15,8 @@
 *.snm
 *.out
 *.toc
+*.pyg
+*.vrb
+
 
 _minted-*

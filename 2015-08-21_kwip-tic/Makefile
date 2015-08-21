@@ -11,7 +11,7 @@ all: kwip-tic.pdf
 
 clean:
 	rm -rf *.bcf *.aux *.bbl *.dvi *.blg *.log *.bak *.idx *.run.xml \
-		*-blx.bib *.nav *.out *.snm *.toc *.pyg *.tdo _minted-*/
+		*-blx.bib *.nav *.out *.snm *.toc *.pyg *.vrb *.tdo _minted-*/
 
 cleanpdf: clean
 	rm -rf *.pdf

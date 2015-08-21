@@ -24,8 +24,10 @@
 
 \title{\texttt{kWIP}: The k-mer Weighted Inner Product}
 \author{Kevin Murray}
-\institute{Borevitz Lab, CPEB, ANU}
+\institute{PhD Candidate, Borevitz Lab, CPEB, ANU}
 \date{21 August 2015}
+
+\usefonttheme{serif}
 
 \begin{document}
 
@@ -40,9 +42,10 @@
 \begin{frame}{Disclaimer}
   \begin{center}
     \vfill
-    \texttt{DRAFT}
+    \large{\texttt{DRAFT}}
     \\
     \pause
+    \vfill
     \small{Or as Norman says, \texttt{kWIP} is Kevin's Work In Progress}
     \vfill
   \end{center}
@@ -71,7 +74,7 @@
 
 \begin{frame}{Large-scale population genomics}
   \begin{itemize}
-    \item Moving from 100s to 1000s and 10000s of samples \textit{per PhD!}
+    \item Moving from 100s to 1,000s or 10,000s of samples \textit{per PhD!}
       \pause
     \item Efficient algorithms to analyse large-scale genomic data
     \begin{itemize}
@@ -91,38 +94,59 @@
 \begin{frame}{Rapid and Basic Clustering}
   \begin{itemize}
     \item Rough approximation of sample relatedness required
-    \item Enables a ``zooming'' approach to genetic analysis
-    \item Required for population resampling
+      \begin{itemize}
+        \item For natural collections
+        \item For association mapping
+        \item As a technical control
+      \end{itemize}
   \end{itemize}
   \pause
   \begin{center}
-    \includegraphics<1>[width=\textwidth]{img/restruct-1}
-    \includegraphics<2>[width=\textwidth]{img/restruct-2}
-    \includegraphics<3>[width=\textwidth]{img/restruct-3}
-    \includegraphics<4>[width=\textwidth]{img/restruct-4}
+    \includegraphics<2>[width=\textwidth]{img/restruct-1}
+    \includegraphics<3>[width=\textwidth]{img/restruct-2}
+    \includegraphics<4>[width=\textwidth]{img/restruct-3}
+    \includegraphics<5>[width=\textwidth]{img/restruct-4}
   \end{center}
   \tiny{after \textcite{brachi_genome-wide_2011}}
 \end{frame}
 
-\begin{frame}{\textit{De novo} technical control}
+\begin{frame}[fragile]{\textit{De novo} technical control}
   \begin{itemize}
     \item Sample DNA not very physically distictive
       \begin{itemize}
         \item Mix-ups and contamination occur
       \end{itemize}
-    \item Catching mix-ups early important
-      \begin{itemize}
-        \item Not just for your own data: SRA not so perfect
-      \end{itemize}
+    \item Not just for your own data: SRA not so perfect
   \end{itemize}
-  Ath 80 FIGURE HERE % TODO
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{img/at80-tree.png}
+  \end{center}
+  \pause
+  \begingroup
+    \fontsize{7pt}{7pt}\selectfont
+    \begin{verbatim}
+      7d74f1b53174afc9fd3aec1dde1d996e SRR095715.fastq SRR095818.fastq
+      54da64f0343b69bcb959d33f127505d8 SRR095713.fastq SRR095817.fastq
+    \end{verbatim}
+  \endgroup
+\end{frame}
+
+\begin{frame}{Presenting \texttt{kWIP}}
+  \begin{itemize}
+    \item $k$-mer based \textit{de novo} genetic clustering
+    \item Weighted Inner Product between hashes to determine similarity
+    \item Produces a distance matrix from raw NGS reads
+  \end{itemize}
+  \begin{center}
+    \includegraphics[width=\textwidth]{img/kwip-overview.png}
+  \end{center}
 \end{frame}
 
 \begin{frame}{Technological Overview}
   \begin{itemize}
     \item $k$-mer analysis
     \item Hashing and Probablistic Data Structures
-    \item Population and RunFrequency Hashes
+    \item Population and Frequency Hashes
     \item (Weighted) Inner Products
   \end{itemize}
 \end{frame}
@@ -134,9 +158,9 @@
         \item<1-> Analyse $k$-length words of sequences
         \item<2> Computationally and biologically appropriate
         \begin{itemize}
-          \item<2> Fast
+          \item<2> Alignment Free
           \item<2> Constant-memory (using \texttt{khmer})
-          \item<2> Scalable and parallelisable
+          \item<2> Fast: Scalable and parallelisable
           \item<2> Cross-scale
         \end{itemize}
       \end{itemize}
@@ -154,22 +178,25 @@
 \begin{frame}{Hashes and Hash Functions}
   \begin{itemize}
     \item Hash function e.g. \mint{python}|hash('ACG') => 5234315134|
+    \item For DNA, 2-bit encoding is used
       \pause
     \item ``Hash'': a probablistic data structure
       \begin{itemize}
+        \item Efficent way of counting k-mers
         \item Constant memory
         \item Easy set operations and inner product
         \item Implicit de Bruijn graph
         \item Implemented in C Titus Brown's \texttt{khmer}
-        \item AKA Countgraph
       \end{itemize}
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Hash}
   \begin{itemize}
+    \item Subset of a Count-Min Sketch/Counting Bloom Filter
     \item Vector of large prime length (e.g. 1e9 + 7)
     \item Indexed modulo length $(bin = h(w_i) \mod prime)$
+    \item Aliasing can occur, hence probablistic
   \end{itemize}
   \begin{center}
     \includegraphics<1>[width=0.6\textwidth]{img/hash-0.png}
@@ -191,25 +218,27 @@
   \end{center}
 \end{frame}
 
-\begin{frame}{$k$-mer based clustering}
-  \begin{itemize}
-    \item Alignment-free sequence clustering is a whole field
-    \item $D2$ and friends
-    \item Most require sequence gene/genome
-    \item Many use inner product as similarity measure
-  \end{itemize}
-  \begin{center}
-    \includegraphics[width=0.6\textwidth]{img/foret-et-al-d2.png}
-  \end{center}
-\end{frame}
-
 \begin{frame}{Shannon Entropy}
   \begin{itemize}
     \item Measure of Information
     \item $ -\sum\limits_{i} p_i log(p_i) $
+    \item \texttt{kWIP} weights by $H(frequency)$
   \end{itemize}
   \begin{center}
     \includegraphics[width=0.6\textwidth]{img/shanent.pdf}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{$k$-mer based clustering}
+  \begin{itemize}
+    \item Alignment-free sequence clustering is a whole field
+    \item $D2$ and friends
+    \item Most require assembled gene/genome sequence
+    \item Many use inner product as similarity measure
+  \end{itemize}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{img/foret-et-al-d2.png}
   \end{center}
 \end{frame}
 
@@ -222,13 +251,13 @@
     \pause
     \item Algorithm:
       \begin{itemize}
-        \item For each sample: count all $k$-mers into a Hash
+        \item For each sample: count all $k$-mers into a hash
         \pause
         \item For each analysis set, i.e ``population'':
           \begin{itemize}
-            \item Calculate the informational entropy of hash frequency ($H$)
+            \item Calculate the entropy of population frequency ($H$)
             \item For each pair of samples $A$ and $B$, calculate \\
-              $\sum^{n}_{i=0} A_i \cdot B_i \cdot H_i$
+              $\sum\limits^{n}_{i=0} A_i \cdot B_i \cdot H_i$
           \end{itemize}
       \end{itemize}
   \end{itemize}
@@ -239,12 +268,12 @@
 
 
 \begin{frame}{\texttt{kWIP}}
-  \begin{itemize} % TODO: columns
+  \begin{itemize}
     \item The software:
       \begin{itemize}
         \item \texttt{C++}, $>$2000 lines of code
         \item Uses \texttt{khmer} for $k$-mer counting \& hashing
-        \item Parallelised, $\approx$ 10 hrs for 96 rice samples.
+        \item Parallelised, fast
         \item GNU GPL licensed, source code on GitHub
       \end{itemize}
       \begin{center}
@@ -271,14 +300,15 @@
 
 \begin{frame}{96 Rice Runs}
   \begin{itemize}
-    \item Set of 96 rice runs from 12 samples (8 tech reps)
-    \item 6 samples each from 2 major groups (Indica, Japonica)
+    \item Set of 96 rice runs from 16 samples (6 tech reps ea)
+    \item About half/half from 2 major groups (Indica, Japonica)
     \item Expectations:
       \begin{itemize}
-        \item All runs cluster into groups of 6 reps (12 samples)
-        \item Big split between two groups: 6 samples each
+        \item All runs cluster into groups of 6 reps (16 samples)
+        \item Big split between two groups: (7 and 9 respectively here)
       \end{itemize}
     \item We see this with \texttt{kWIP}, not with Unweighted IP
+    \item Took 10 hours on 16-core Raijin node, 60-80GB RAM
   \end{itemize}
 \end{frame}
 
@@ -296,6 +326,24 @@
   \end{center}
 \end{frame}
 
+\begin{frame}{Simulation}
+  \begin{itemize}
+    \item Aims to re-create a biforcating tree
+    \item \texttt{kWIP} does so
+    \item Neighbor joining trees have Robinson-Foulds distance of 0
+  \end{itemize}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{img/kwip-dendro.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics<1>[width=0.6\textwidth]{img/true-mat.png}
+    \includegraphics<2>[width=0.6\textwidth]{img/kwip-mat.png}
+    \includegraphics<3>[width=0.6\textwidth]{img/ip-mat.png}
+  \end{center}
+\end{frame}
 
 \begin{frame}{Simulation}
   \begin{itemize}
