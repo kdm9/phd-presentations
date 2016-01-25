@@ -1,0 +1,7 @@
+
+    $k = 3$\\
+    \texttt{ACGTGT}\\
+    \texttt{ACG~~~}\\
+    \texttt{~CGT~~}\\
+    \texttt{~~GTG~}\\
+    \texttt{~~~TGT}
