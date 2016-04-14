@@ -1,7 +1,7 @@
 TEX_COMPILER=lualatex -shell-escape
 BIB_COMPILER=biber -q
 
-all: KDM-kwip-tuebingen.pdf
+all: kdm.pdf
 
 %.pdf: %.tex %.bib $(shell find img )
 	$(TEX_COMPILER) $<
