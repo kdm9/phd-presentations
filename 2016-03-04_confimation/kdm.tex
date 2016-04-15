@@ -89,56 +89,30 @@
 \begin{frame}{Presenting \texttt{kWIP}}
   \begin{itemize}
     \item $k$-mer based \textit{de novo} genetic relatedness estimator
-    \item Weighted Inner Product between hashes to determine relatedness
     \item Produces a distance matrix from raw NGS reads
+    \item Uses Weighted Inner Product between $k$-mer counts
   \end{itemize}
   \begin{center}
     \includegraphics[width=\textwidth]{img/kwip-overview.png}
   \end{center}
 \end{frame}
 
-% \begin{frame}{Technological Overview}
-%   \begin{itemize}
-%     \item Alignment-free Sequence Comparison
-%     \item Hashing and Probabilistic Data Structures
-%     \item Population and Frequency Hashes
-%     \item (Weighted) Inner Products
-%   \end{itemize}
-% \end{frame}
-
-% \begin{frame}{$k$-mer Seq. Comparison}
-%   \begin{columns}[t]
-%     \column{0.5\textwidth}
-%       \begin{itemize}
-%         \item<1-> Analyse sequences by decomposition to $k$-length words
-%         \item<1-> Computationally and biologically appropriate
-%         \begin{itemize}
-%           \item<1-> Fast: Scalable and parallelisable
-%           \item<1-> Constant-memory (using \texttt{khmer})
-%           \item<1-> Reference-free
-%           \item<1-> Easily scales to longer or more reads \end{itemize} \end{itemize}
-%     \column{0.5\textwidth}
-%     \begin{center}
-%       \includegraphics<1>[height=0.6\textheight]{img/ali.png}
-%       \includegraphics<2>[height=0.6\textheight]{img/ali-free.png}
-%     \end{center}
-%   \end{columns}
-% \end{frame}
-
 \begin{frame}{$k$-mer Sequence Comparison}
   \begin{itemize}
     \item Many existing tools
     \begin{itemize}
-      \item Feature Frequency Profiles \autocite{sims_alignment-free_2009}
       \item $D2$ and related statistics
+      \item Early steps in many sequence aligners
       \item \texttt{spaced} and other spaced-word approaches
         \autocite{morgenstern_estimating_2015,leimeister_fast_2014}
       \item \texttt{Cnidaria} and other Jaccard distance approaches
         \autocite{aflitos_cnidaria:_2015}
-      \item Early steps in BLAST \textit{et al.}
+      \item \texttt{mash} and other MinHash approaches
+        \autocite{ondov_fast_2015}
     \end{itemize}
     \item Most require assembled gene/genome sequence
-    \item Many use inner product ($D2$) as similarity measure
+    \item Most target deeper relationships
+    \item Many use inner product between $k$-mer counts
     \item \texttt{kWIP} extends these tools:
       \begin{itemize}
         \item No assembly required
@@ -194,14 +168,11 @@
     \item 3000 rice genomes
       \begin{itemize}
         \item 3000 rice samples (25k runs)
-        \item Analysing in sets of 96, from all major groups
         \item \textcite{the_3000_rice_genomes_project_3000_2014}
       \end{itemize}
     \item Chlamydomonas
       \begin{itemize}
         \item $\approx 20$ lines from USA
-        \item High coverage re-sequencing with leftover assembly
-        \item Compare to SNP-based distance calculation
         \item \textcite{flowers_whole-genome_2015}
       \end{itemize}
     \item Simulation
@@ -234,10 +205,29 @@
 \end{frame}
 
 \begin{frame}{Chlamydomonas}
+  \begin{itemize}
+    \item High coverage re-sequencing with leftover assembly
+      \begin{itemize}
+        \item Map to reference
+        \item Assemble missing sample genome from leftover reads
+        \item Map again to reference + leftovers
+        \item Call variants
+        \item Calculate distance
+      \end{itemize}
+    \item Compare kWIP to SNP-based distance calculation
+    \begin{itemize}
+      \item Compare PCA visualisation of each
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Chlamydomonas}
   \begin{center}
     \includegraphics<1>[width=0.6\textwidth]{img/chlamydomonas_PCA_from_paper.png}
     \includegraphics<2>[width=0.6\textwidth]{img/chlamydomonas_PCA_full-set-dim_1-3.png}
     \begin{itemize}
+      \item[]<1> \tiny{\textit{``Sample CC-4414 (red) is hidden behind the cluster of laboratory
+        strains (light blue)''}}
       \item[] Population structure of \textit{Chlamydomonas} in USA
       \item[] \tiny{Data from \textcite{flowers_whole-genome_2015}}
     \end{itemize}
@@ -251,11 +241,13 @@
       \item Simulate natural population structure
       \item Simulate sample genomes, sequencing runs
       \item Hash reads, kWIP
+      \item Compare known truth to kWIP results \\ \tiny{(with Spearmans Rank
+        Correlation, $\rho$)}
     \end{itemize}
     \item kWIP quantitatively outperforms unweighted equivalent
       \begin{itemize}
-        \item Can compare known truth to kWIP results
-        \item Spearmans Rank Correlation ($\rho$)
+        \item Effect of coverage on accuracy
+        \item Accuracy across scale of variation
       \end{itemize}
   \end{itemize}
 \end{frame}
@@ -278,7 +270,7 @@
 
 \begin{frame}{\texttt{kWIP} Summary}
   \begin{itemize}
-    \item \texttt{kWIP} is implemented, Beta software
+    \item \texttt{kWIP} is implemented, no known bugs
     \item Publicly available at \url{github.com/kdmurray91/kwip}
     \item We show the utility of \texttt{kWIP}
     \item Publication coming soon
@@ -290,14 +282,14 @@
     \item Finish \texttt{kWIP} paper
     \item Complete \& Publish GBS analysis tools
     \begin{itemize}
-      \item GBS is a quick \& cheap method
+      \item GBS is a quick \& cheap sequencing method
       \item Have written improved analysis tools
       \item These need publication
     \end{itemize}
     \pause
     \item Further $k$-mer analysis methods
       \begin{itemize}
-        \item Marrying assembly and $k$-mer comparision concepts
+        \item Marrying assembly and $k$-mer comparison concepts
         \item Pan-genome representations
       \end{itemize}
     \item \textit{Eucalyptus} population genomics
