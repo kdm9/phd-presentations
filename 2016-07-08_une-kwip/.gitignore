@@ -1,0 +1,24 @@
+*.swp
+*.bak
+.~*# # OpenOffice temp files
+
+# Tex temps
+*.bcf
+*.log
+*.aux
+*.dvi
+*-blx.bib
+*.bbl
+*.blg
+*.run.xml
+*.nav
+*.snm
+*.out
+*.toc
+*.pyg
+*.vrb
+*.fls
+*.fdb_latexmk
+
+
+_minted-*
