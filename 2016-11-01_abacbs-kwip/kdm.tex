@@ -21,9 +21,10 @@
 \bibliography{kdm.bib}
 
 \title{\texttt{kWIP}: The k-mer Weighted Inner Product}
+\subtitle{Estimating genetic similarity of sequencing runs}
 \author{Kevin Murray}
-\institute{Borevitz Lab, ANU}
-\date{\today}
+\institute{PhD Candidate\\ Borevitz Lab, ANU}
+\date{2016-11-02}
 
 \usefonttheme{serif}
 
@@ -41,29 +42,22 @@
 \end{frame}
 }
 
-\begin{frame}{Large-scale population genomics}
-  \begin{itemize}
-    \item Moving from 100s to 1,000s or 10,000s of samples \emph{per study!}
-    \item Efficient algorithms to analyse large-scale genomic data
-    \begin{itemize}
-      \item Reference \& alignment free: \textit{less bias, de novo}
-      \item Platform/protocol agnostic: \textit{future proof}
-      \item Computationally efficient: \textit{not the bottleneck}
-    \end{itemize}
-  \end{itemize}
-  \begin{center}
-    \includegraphics[width=\textwidth]{img/cross-scale.png}
-  \end{center}
-  \tiny{after \textcite{peterson_double_2012}}
+\begin{frame}{Motivation}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.45\textwidth]{img/euc.jpg}
+    \includegraphics[width=0.4\textwidth]{img/albens.jpg}
+  \end{figure}
 \end{frame}
 
-\begin{frame}{Genetic Similarity Estimation}
+\begin{frame}{Collection Re-structuring}
   \begin{itemize}
-    \item Rough approximation of sample relatedness required
-      \begin{itemize}
-        \item For natural collections
-        \item As a technical control
-      \end{itemize}
+    \item Collect 100s or 1,000s of natural samples
+    \item ``First look'' at genetic relatedness
+    \begin{itemize}
+      \item Assert replicates cluster, detect mixups
+      \item Carry best samples to detailed analysis
+    \end{itemize}
   \end{itemize}
   \begin{center}
     \includegraphics<1>[width=\textwidth]{img/restruct-1}
@@ -72,20 +66,65 @@
     \begin{itemize}
       \item[]<1-3> \tiny{after \textcite{brachi_genome-wide_2011}}
     \end{itemize}
-    \includegraphics<4>[width=\textwidth]{img/jared-tree.pdf}
-    \includegraphics<5>[width=0.6\textwidth]{img/at80-tree.png}
   \end{center}
 \end{frame}
 
 
-\begin{frame}[c]{Genetic Similarity Estimation}
-  \centering Initially, we care mostly about the deepest and shallowest
-  branches of the tree.
+\begin{frame}{(Initial) Genetic Similarity Estimation}
+  \begin{itemize}
+    \item Initial genetic analyses inspect
+      \begin{itemize}
+        \item Outgroups (widest relationships)
+        \item Replicates
+        \item Mix-ups
+        \item Broad groupings
+      \end{itemize}
+    \item Current genetic similarity, \textit{not evolutionary history}
+  \end{itemize}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{img/cross-scale.png}
+  \end{figure}
+  \tiny{after \textcite{peterson_double_2012}}
 \end{frame}
+
+
+\begin{frame}[c]{Genetic Similarity Estimation -- Algorithms}
+  \begin{itemize}
+    \item Efficient algorithms to analyse large-scale genomic data
+    \begin{itemize}
+      \item Reference \& alignment free: \textit{less bias, de novo}
+      \item Platform/protocol agnostic: \textit{future proof}
+      \item Computationally efficient: \textit{not the bottleneck}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Alignment-free Sequence Comparison}
+  \begin{itemize}
+    \item Many existing metrics, and tools
+    \begin{itemize}
+      \item $D2$ and related statistics
+      \item \texttt{spaced} and other spaced-word approaches
+        \autocite{morgenstern_estimating_2015,leimeister_fast_2014}
+      \item \texttt{Cnidaria} and other Jaccard index approaches
+        \autocite{aflitos_cnidaria:_2015}
+      \item \texttt{mash} and other MinHash approaches
+        \autocite{ondov_fast_2015}
+    \end{itemize}
+    \item Most require assembled gene/genome sequence
+    \item \textbf{Most assume evolutionary history between samples}
+  \end{itemize}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/aln.jpg}
+  \end{figure}
+\end{frame}
+
 
 \begin{frame}{Presenting \texttt{kWIP}}
   \begin{itemize}
-    \item $k$-mer based \textit{de novo} genetic relatedness estimator
+    \item $k$-mer based \textit{de novo} genetic similarity estimator
     \item Produces a distance matrix from raw NGS reads
     \item Uses Weighted Inner Product between $k$-mer counts
   \end{itemize}
@@ -94,82 +133,47 @@
   \end{center}
 \end{frame}
 
-\begin{frame}{$k$-mer Sequence Comparison}
-  \begin{itemize}
-    \item Many existing tools
-    \begin{itemize}
-      \item $D2$ and related statistics
-      \item Early steps in many sequence aligners
-      \item \texttt{spaced} and other spaced-word approaches
-        \autocite{morgenstern_estimating_2015,leimeister_fast_2014}
-      \item \texttt{Cnidaria} and other Jaccard distance approaches
-        \autocite{aflitos_cnidaria:_2015}
-      \item \texttt{mash} and other MinHash approaches
-        \autocite{ondov_fast_2015}
-    \end{itemize}
-    \item Most require assembled gene/genome sequence
-    \item Most target deeper relationships
-    \item Many use inner product between $k$-mer counts
-    \item \texttt{kWIP} extends these tools:
-      \begin{itemize}
-        \item No assembly required
-        \item Weights inner product to improve accuracy
-      \end{itemize}
-  \end{itemize}
-\end{frame}
-
-
-\begin{frame}{Entropy Weighting}
-  \begin{itemize}
-    \item \texttt{kWIP} weights by Shannon entropy: $H(frequency)$
-    \item Shannon entropy: measure of information
-  \end{itemize}
-  \begin{center}
-    \includegraphics[width=0.6\textwidth]{img/shanent.png}
-  \end{center}
-\end{frame}
-
 \begin{frame}{\texttt{kWIP} Algorithm}
   \begin{itemize}
-    \item For each run: count all $k$-mers probabilistically
-    \item For each analysis set:
-      \begin{itemize}
-        \item Calculate the entropy of $k$-mer frequency ($H$)
-        \item For each pair of runs with $k$-mer counts $A$ and $B$, calculate
-          $$\sum\limits^{n}_{i=1} A_i \cdot B_i \cdot H_i$$
-      \end{itemize}
+    \item Count each sample's $k$-mers probabilistically (\texttt{khmer})
+    \item Calculate information content of each $k$-mer
+    \item Compute each pairwise distance using weighed inner product (WIP)
   \end{itemize}
   \begin{center}
-    \includegraphics[width=0.4\textwidth]{img/hash-wip.png}
+    \includegraphics[width=0.5\textwidth]{img/sketch_aggregation.pdf}
+    \includegraphics[width=0.37\textwidth]{img/shanent.pdf}
   \end{center}
 \end{frame}
 
-\begin{frame}{\texttt{kWIP}}
+\begin{frame}{\texttt{kWIP} -- Software}
   \begin{itemize}
-    \item The software:
-      \begin{itemize}
-        \item \texttt{C++11}, $\approx$2000 lines of code
-        \item Uses \texttt{khmer} for $k$-mer counting
-        \item GNU GPL licensed, source code on GitHub
-        \item Precompiled binaries provided
-      \end{itemize}
-      \begin{center}
-        \includegraphics[width=0.7\textwidth]{img/kwip-doc-screenshot.png}
-      \end{center}
+    \item Uses \texttt{khmer} for $k$-mer counting
+    \item Parallelised with OpenMP
+    \item GNU GPL licensed, \texttt{C++11} source code on GitHub
+    \item Precompiled binaries provided
+    \item Documentation \& tutorials online
   \end{itemize}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/kwip-doc-screenshot.png}
+  \end{figure}
 \end{frame}
 
 \begin{frame}{\texttt{kWIP} Case Studies}
   \begin{itemize}
-    \item 3000 rice genomes
+    \item Rice genomes project
+        \autocite{the_3000_rice_genomes_project_3000_2014}
       \begin{itemize}
-        \item 3000 rice samples (25k runs)
-        \item \textcite{the_3000_rice_genomes_project_3000_2014}
+        \item 3000 rice varieties (25k runs)
+        \item $\approx 2$-fold sequencing per run
       \end{itemize}
-    \item Chlamydomonas
+    \item Chlamydomonas \autocite{flowers_whole-genome_2015}
       \begin{itemize}
-        \item $\approx 20$ lines from USA
-        \item \textcite{flowers_whole-genome_2015}
+        \item High-coverage sequencing of 20 wild \& lab strains
+      \end{itemize}
+    \item Rice root-associated microbiome metagenomics
+      \begin{itemize}
+        \item Shotgun sequencing of root-soil interface
       \end{itemize}
     \item Simulation
       \begin{itemize}
@@ -178,17 +182,16 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{96 Rice Runs}
+\begin{frame}{Replicate and Subspecies Clustering}
   \begin{itemize}
-    \item Set of 96 rice runs from 16 samples (6 tech reps ea)
-    \item About half/half from 2 major groups (Indica, Japonica)
+    \item Set of 96 rice runs from 16 samples, 6 tech reps.
+    \item $\approx 3$-fold sequencing per run
     \item Expectations:
       \begin{itemize}
-        \item All runs cluster into groups of 6 reps (16 samples)
-        \item Big split between two groups: (7 and 9 respectively here)
+        \item All runs cluster into samples of 6 reps
+        \item Big split between 2 major groups (Indica, Japonica)
       \end{itemize}
     \item Recover known grouping w/ \texttt{kWIP}, not w/ unweighted IP
-    \item Sensitive to read depth
     \item Took 6 hours on 16 CPU, 64GB RAM supercomputer node
   \end{itemize}
 \end{frame}
@@ -201,65 +204,83 @@
 \end{frame}
 
 \begin{frame}{Chlamydomonas}
-  \begin{itemize}
-    \item High coverage re-sequencing with leftover assembly
-      \begin{itemize}
-        \item Map to reference
-        \item Assemble missing sample genome from leftover reads
-        \item Map again to reference + leftovers
-        \item Call variants
-        \item Calculate distance
-      \end{itemize}
-    \item Compare kWIP to SNP-based distance calculation
-    \begin{itemize}
-      \item Compare PCA visualisation of each
-    \end{itemize}
-  \end{itemize}
+  \begin{columns}[t]
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+          \item Avoid reference bias with ``leftover assembly''
+              \autocite{flowers_whole-genome_2015}
+            \begin{itemize}
+              \item Sequence \textit{very} deep ($> 200$x)
+              \item Map to reference
+              \item Assemble umapped reads
+              \item Map to reference + leftovers
+              \item Call variants
+              \item \texttt{SNPrelate} + PCA
+            \end{itemize}
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{center}
+        \includegraphics[width=\textwidth]{img/flowers.png}
+        \begin{itemize}
+          \item[] \tiny{\textit{``Sample CC-4414 (red) is hidden behind the cluster of laboratory
+            strains (light blue)''}}
+        \end{itemize}
+      \end{center}
+    \end{column}
+  \end{columns}
 \end{frame}
 
-\begin{frame}{Chlamydomonas}
-  \begin{center}
-    \includegraphics<1>[width=0.6\textwidth]{img/flowers.png}
-    \includegraphics<2>[width=0.6\textwidth]{img/chlamy.pdf}
-    \begin{itemize}
-      \item[]<1> \tiny{\textit{``Sample CC-4414 (red) is hidden behind the cluster of laboratory
-        strains (light blue)''}}
-      \item[] Population structure of \textit{Chlamydomonas} in USA
-      \item[] \tiny{Data from \textcite{flowers_whole-genome_2015}}
-    \end{itemize}
-  \end{center}
+\begin{frame}{Chlamydomonas -- with \texttt{kWIP}}
+  \begin{itemize}
+    \item Download SRA files
+    \item Count $k$-mers
+    \item Run \texttt{kWIP}
+  \end{itemize}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/flowers.png}
+    \includegraphics[width=0.48\textwidth]{img/chlamy.pdf}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Metagenomes}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/greenhouse_edwards.png}
+    \includegraphics[width=0.5\textwidth]{img/greenhouse_nw.pdf}
+  \end{figure}
 \end{frame}
 
 \begin{frame}{Simulation}
   \begin{itemize}
-    \item Perform simulated sequencing experiment:
+    \item Perform simulated sequencing experiment (50 times):
     \begin{itemize}
       \item Simulate natural population structure
-      \item Simulate sample genomes, sequencing runs
-      \item Hash reads, kWIP
-      \item Compare known truth to kWIP results \\ \tiny{(with Spearmans Rank
-        Correlation, $\rho$)}
+      \item Simulate sample genomes
+      \item Simulate sequencing runs (with random variation)
+      \item Sketch reads, \texttt{kWIP}
+      \item Compare \texttt{kWIP} results to known truth
+      \item Spearmans Rank Correlation ($\rho$),  ``Performance''
     \end{itemize}
     \item kWIP quantitatively outperforms unweighted equivalent
       \begin{itemize}
-        \item Effect of coverage on accuracy
-        \item Accuracy across scale of variation
+        \item Performs reasonably at low-moderate coverage
+        \item Performance stable across scale of variation
       \end{itemize}
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Simulation Results}
+\begin{frame}{Performance vs Coverage}
   \begin{figure}
     \centering
-    \caption{Coverage vs Accuracy}
     \includegraphics[width=0.7\textwidth]{img/coverage-vs-rho_50x.pdf}
   \end{figure}
 \end{frame}
 
-\begin{frame}{Simulation Results}
+\begin{frame}{Performance vs Mean pairwise distance ($\pi$)}
   \begin{figure}
     \centering
-    \caption{Mean pairwise distance $pi$ vs Accuracy}
     \includegraphics[width=0.7\textwidth]{img/pi-vs-performance.pdf}
   \end{figure}
 \end{frame}
@@ -269,22 +290,30 @@
     \item \texttt{kWIP} is implemented, no known bugs
     \item Publicly available at \url{github.com/kdmurray91/kwip}
     \item We show the utility of \texttt{kWIP}
-    \item Publication coming soon
-  \end{itemize}
-\end{frame}
-\begin{frame}{Thanks}
-  \begin{itemize}
-    \item My \texttt{kWIP} collaborators
-      \begin{itemize}
-        \item \textbf{Norman Warthmann}, Christfried Webers, Cheng Soon Ong
-      \end{itemize}
-    \item Sylvain For\^{e}t, Justin Borevitz
-    \item Rose Andrew
-    \item Yourselves
+    \item Publication in review at PLoS Comp. Biol. (\url{bit.do/kwip})
+    \item Version 2 on the way
+    \begin{itemize}
+      \item MPI parallel
+      \item More metrics
+      \item Even faster
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
-\begin{frame}[shrink=20]{}
+\begin{frame}{Thanks}
+  \begin{itemize}
+    \item Norman Warthmann, Justin Borevitz
+    \item Christfried Webers, Cheng Soon Ong
+    \item Sylvain For\^{e}t
+    \item $AB^3ACBS$ Organisers and Yourselves
+  \end{itemize}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/lab.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}[shrink=40]{}
   \printbibliography
   \vfill
   .
