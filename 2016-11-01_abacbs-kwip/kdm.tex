@@ -1,4 +1,5 @@
 \documentclass[t]{beamer}
+\usepackage[figureposition=top]{caption}
 
 \usetheme{default}
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]
@@ -48,6 +49,9 @@
     \includegraphics[width=0.45\textwidth]{img/euc.jpg}
     \includegraphics[width=0.4\textwidth]{img/albens.jpg}
   \end{figure}
+  \begin{itemize}
+    \item[] \tiny{Wikimedia Commons}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Collection Re-structuring}
@@ -79,7 +83,7 @@
         \item Mix-ups
         \item Broad groupings
       \end{itemize}
-    \item Current genetic similarity, \textit{not evolutionary history}
+  \item Current genetic similarity, \textit{cf.} evolutionary history
   \end{itemize}
   \begin{figure}
     \centering
@@ -246,20 +250,28 @@
 \end{frame}
 
 \begin{frame}{Metagenomes}
-  \begin{figure}
-    \centering
-    \includegraphics[width=0.5\textwidth]{img/greenhouse_edwards.png}
-    \includegraphics[width=0.5\textwidth]{img/greenhouse_nw.pdf}
-  \end{figure}
+    \begin{figure}
+        \centering
+        \begin{minipage}{.5\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{img/greenhouse_edwards.png}
+            \caption{\textcite{edwards_structure_2015}}
+        \end{minipage}%
+        \begin{minipage}{.5\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{img/greenhouse_nw.pdf}
+            \caption{ \texttt{kWIP}}
+        \end{minipage}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Simulation}
   \begin{itemize}
     \item Perform simulated sequencing experiment (50 times):
     \begin{itemize}
-      \item Simulate natural population structure
-      \item Simulate sample genomes
-      \item Simulate sequencing runs (with random variation)
+      \item Simulate natural population structure\autocite{staab_scrm:_2015}
+      \item Simulate sample genomes\autocite{cartwright_dna_2005}
+      \item Simulate sequencing runs (with random variation)\autocite{holtgrewe_mason_2010}
       \item Sketch reads, \texttt{kWIP}
       \item Compare \texttt{kWIP} results to known truth
       \item Spearmans Rank Correlation ($\rho$),  ``Performance''
@@ -269,6 +281,7 @@
         \item Performs reasonably at low-moderate coverage
         \item Performance stable across scale of variation
       \end{itemize}
+    \item \textbf{Reproducible} with \texttt{Snakemake} \& Docker
   \end{itemize}
 \end{frame}
 
@@ -323,7 +336,7 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}[shrink=40]{}
+\begin{frame}[shrink=50]{}
   \printbibliography
   \vfill
   .
