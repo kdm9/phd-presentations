@@ -1,0 +1,54 @@
+---
+title: Estimating Genetic Similarity
+theme: kdmsol
+transition: 'slide'
+center: 'false'
+---
+
+
+## Today's Topics
+
+* kWIP (past & present)
+* Allele Assembly (future)
+
+-----
+
+## kWIP
+
+* Estimates genetic similarity
+    - from NGS reads
+    - with few parameters
+    - over a wide range of relatedness
+    - at low coverage
+
+-----
+
+### kWIP progress
+
+In the last year:
+
+- Wrote paper
+- Got scooped
+
+-----
+
+### kWIP Performance
+
+![Performance vs Coverage](imgs/cov_500_avgsd.svg){width=800px}
+
+-----
+
+### kWIP Performance
+
+![Performance vs Divergence ($\pi$)](imgs/pi_8x_avgsd.svg){width=800px}
+
+-----
+
+### kWIP Case Study
+
+![*C. reinhartii* population re-sequencing](imgs/chlamy_both.svg){width=500px}
+
+-----
+
+## Allele Assembly
+
