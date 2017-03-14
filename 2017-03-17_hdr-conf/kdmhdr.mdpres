@@ -1,8 +1,10 @@
 ---
 title: Estimating Genetic Similarity
+author: Kevin Murray
 theme: kdmsol
-transition: 'slide'
+transition: 'none'
 center: 'false'
+# revealjs-url: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/
 ---
 
 
@@ -11,7 +13,7 @@ center: 'false'
 * kWIP (past & present)
 * Allele Assembly (future)
 
------
+------
 
 ## kWIP
 
@@ -21,34 +23,47 @@ center: 'false'
     - over a wide range of relatedness
     - at low coverage
 
------
+------
 
 ### kWIP progress
 
 In the last year:
 
-- Wrote paper
-- Got scooped
+- Enhanced simulations
+- More datasets
+- Comparing to tools published in '16
+- Wrote & submitted paper
 
------
+------
 
-### kWIP Performance
+### kWIP Simulation
 
-![Performance vs Coverage](imgs/cov_500_avgsd.svg){width=800px}
+![Performance vs Divergence ($\pi$)](imgs/pi_8x_avgsd.svg){width=100%}
 
------
+------
 
-### kWIP Performance
+### kWIP Simulation
 
-![Performance vs Divergence ($\pi$)](imgs/pi_8x_avgsd.svg){width=800px}
+![Performance vs Coverage](imgs/cov_500_avgsd.svg){width=100%}
 
------
+------
 
 ### kWIP Case Study
 
-![*C. reinhartii* population re-sequencing](imgs/chlamy_both.svg){width=500px}
+![*C. reinhartii* population re-sequencing](imgs/chlamy_both_km.svg){width=800px}
 
------
+------
 
-## Allele Assembly
+### kWIP Summary
+
+- Many users across the world
+- Paper in peer review
+- Compare well to competing tools
+
+------
+
+## Targeted Assembly
+
+
+------
 
