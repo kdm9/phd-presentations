@@ -1,17 +1,18 @@
 ---
-title: Estimating Genetic Similarity
+title: PhD Update
 author: Kevin Murray
 theme: kdmsol
 transition: 'none'
 center: 'false'
+date: 2017-03-17
 # revealjs-url: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/
 ---
 
 
 ## Today's Topics
 
-* kWIP (past & present)
-* Allele Assembly (future)
+* kWIP (past, present & future)
+* Targeted Gene Assembly (future)
 
 ------
 
@@ -25,6 +26,13 @@ center: 'false'
 
 ------
 
+### kWIP Overview
+
+<!-- ![Performance vs Divergence ($\pi$)](imgs/pi_8x_avgsd.svg){width=100%}
+-->
+
+------
+
 ### kWIP progress
 
 In the last year:
@@ -33,6 +41,7 @@ In the last year:
 - More datasets
 - Comparing to tools published in '16
 - Wrote & submitted paper
+
 
 ------
 
@@ -62,8 +71,42 @@ In the last year:
 
 ------
 
-## Targeted Assembly
+### kWIP Future
 
+- What can we use kWIP for?
+    - Genome Prediction?
+        - (Euc. oil yield)
+    - Generalised Dissimilarity Modelling?
+        - (Microbial variation on landscape)
 
 ------
 
+## Targeted Assembly
+
+Can estimate whole-genome similarity *de novo*
+
+- Use public datasets
+- Assemble candidate genes
+- Compare candidate gene tree to whole genome
+
+------
+
+### Pilot study -- Rice
+
+- Find ancestral domestication alleles
+    - Pre-exist in crop wild relatives
+    - Many public datasets, few meta-analyses
+    - Several known domestication loci
+
+------
+
+## Acknowledgments
+
+- Norman Warthmann
+- Justin Borevitz
+- Chris Webers
+- Cheng Soon Ong
+
+------
+
+![](imgs/sf.png){width=400px}
