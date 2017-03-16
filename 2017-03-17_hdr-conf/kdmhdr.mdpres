@@ -14,22 +14,21 @@ date: 2017-03-17
 * kWIP (past, present & future)
 * Targeted Gene Assembly (future)
 
-------
+-----
 
 ## kWIP
 
 * Estimates genetic similarity
-    - from NGS reads
-    - with few parameters
+    - from NGS reads (*de novo*)
     - over a wide range of relatedness
     - at low coverage
+    - with few assumptions
 
 ------
 
 ### kWIP Overview
 
-<!-- ![Performance vs Divergence ($\pi$)](imgs/pi_8x_avgsd.svg){width=100%}
--->
+<!-- ![Performance vs Divergence ($\pi$)](imgs/pi_8x_avgsd.svg){width=100%} -->
 
 ------
 
@@ -94,9 +93,9 @@ Can estimate whole-genome similarity *de novo*
 ### Pilot study -- Rice
 
 - Find ancestral domestication alleles
+    - Several known domestication loci
     - Pre-exist in crop wild relatives
     - Many public datasets, few meta-analyses
-    - Several known domestication loci
 
 ------
 
