@@ -12,6 +12,8 @@ date: 2017-03-17
 
 ## kWIP
 
+***k**-mer **W**eighted **I**nner **P**roduct*
+
 * Estimates genetic similarity
     - from NGS reads (*de novo*)
     - over a wide range of divergence
@@ -23,11 +25,11 @@ date: 2017-03-17
 ### Why kWIP?
 
 - Reference free
-    - No reference?
+    - No reference? No problem!
     - Reference bias
 - Sanity check
     - Direct from data
-    - "unbiased"
+    - "Unbiased"
 
 ------
 
