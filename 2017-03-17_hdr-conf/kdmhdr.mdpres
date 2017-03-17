@@ -1,58 +1,64 @@
 ---
-title: PhD Update
+title: Estimating Genetic Similarity
 author: Kevin Murray
 theme: kdmsol
 transition: 'none'
 center: 'false'
+history: 'true'
 date: 2017-03-17
-# revealjs-url: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/
 ---
 
-
-## Today's Topics
-
-* kWIP (past, present & future)
-* Targeted Gene Assembly (future)
-
------
+------
 
 ## kWIP
 
 * Estimates genetic similarity
     - from NGS reads (*de novo*)
-    - over a wide range of relatedness
+    - over a wide range of divergence
     - at low coverage
     - with few assumptions
 
 ------
 
-### kWIP Overview
+### Why kWIP?
 
-<!-- ![Performance vs Divergence ($\pi$)](imgs/pi_8x_avgsd.svg){width=100%} -->
+- Reference free
+    - No reference?
+    - Reference bias
+- Sanity check
+    - Direct from data
+    - "unbiased"
 
 ------
+
+### kWIP Overview
+
+![](imgs/kwip-overview.svg){width=800px}
+
+------
+
 
 ### kWIP progress
 
 In the last year:
 
-- Enhanced simulations
-- More datasets
-- Comparing to tools published in '16
-- Wrote & submitted paper
+* Enhanced simulations
+* More datasets
+* Compare to competing tools (published in '16)
+* Wrote & submitted paper
 
 
 ------
 
 ### kWIP Simulation
 
-![Performance vs Divergence ($\pi$)](imgs/pi_8x_avgsd.svg){width=100%}
+![](imgs/pi_8x_avgsd.svg){width=100%}
 
 ------
 
 ### kWIP Simulation
 
-![Performance vs Coverage](imgs/cov_500_avgsd.svg){width=100%}
+![](imgs/cov_500_avgsd.svg){width=100%}
 
 ------
 
@@ -66,7 +72,10 @@ In the last year:
 
 - Many users across the world
 - Paper in peer review
-- Compare well to competing tools
+- Compare well to recent tools
+
+![](imgs/weigel.png){height=150px}
+![](imgs/kwip-biorxiv.png){height=150px}
 
 ------
 
@@ -77,25 +86,6 @@ In the last year:
         - (Euc. oil yield)
     - Generalised Dissimilarity Modelling?
         - (Microbial variation on landscape)
-
-------
-
-## Targeted Assembly
-
-Can estimate whole-genome similarity *de novo*
-
-- Use public datasets
-- Assemble candidate genes
-- Compare candidate gene tree to whole genome
-
-------
-
-### Pilot study -- Rice
-
-- Find ancestral domestication alleles
-    - Several known domestication loci
-    - Pre-exist in crop wild relatives
-    - Many public datasets, few meta-analyses
 
 ------
 
